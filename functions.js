@@ -25,7 +25,7 @@ function changeBackground(imagePath){
 }
 function phoneCallSound(){
   const audio = new Audio('ring1.mp3');
-  audio.volume = 0.5; // Set volume
+  audio.volume = 0.2; // Set volume
   audio.play();
 }
 function playBackgroundMusic(filePath){
@@ -39,11 +39,11 @@ function displayPhone(){
 function phoneCallChef(){
     displayPhone();
     updatePhonePerson('oldChef.jpg');
-    document.getElementById("screen").innerText = "Chef";
+    document.getElementById("phoneName").innerText = "Chef";
 }
 function playLoadingSound(){
   const audio = new Audio('loading1.mp3');
-  audio.volume = 0.5; // Set volume
+  audio.volume = 1.0; // Set volume
   audio.play();
 }
 function startGame(){

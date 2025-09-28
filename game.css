@@ -117,8 +117,8 @@ body{
     font-size: 22px;
 }
 #iphone {
-  width: 150px;
-  height: 300px;
+  width: 200px;
+  height: 400px;
   background: #222;
   border: 5px solid #ccc;
   border-radius: 40px;
@@ -131,8 +131,8 @@ body{
   left: 5%;
 }
 #screen {
-  width: 130px;
-  height: 260px;
+  width: 180px;
+  height: 380px;
   background: black;
   border-radius: 28px;
   position: absolute;
@@ -145,8 +145,8 @@ body{
     font-size: larger;
 }
 #person{
-    width: 100px;
-    height: 100px;
+    width: 180px;
+    height: 180px;
     background: url('') no-repeat center/contain;
     position: absolute;
     top: 50%;
@@ -172,4 +172,36 @@ body{
 }
 #howToPlay br{
     line-height: 1.6;
+}
+#phoneName{
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+    color: white;
+    margin-top: 25px;
+}
+#answerPhone, #dontAnswerPhone{
+    position: absolute;
+    bottom: 15px;
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+#answerPhone{
+    left: 20px;
+    background-color: green;
+}
+#dontAnswerPhone{
+    right: 20px;
+    background-color: red;
+}
+#answerPhone:hover{
+    background-color: darkgreen;
+}
+#dontAnswerPhone:hover{
+    background-color: darkred;
 }
