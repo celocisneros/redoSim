@@ -12,7 +12,7 @@ function updateDisplays(){
     document.getElementById("time").innerText = `Time: ${time}`;
 }
 
-function chnageBackground(imagePath){
+function changeBackground(imagePath){
     document.body.style.backgroundImage = `url('${imagePath}')`;
     document.body.style.backgroundSize = "70%";
     document.body.style.backgroundPosition = "center";
@@ -31,6 +31,6 @@ function startGame(){
     document.getElementById("restaraunt").style.display="flex";
     document.getElementById("dayBox").style.display="flex";
     document.getElementById("timeBox").style.display="flex";
-    chnageBackground('day1.jpg');
+    changeBackground('night1.jpg');
     updateDisplays();
 } 
