@@ -1,11 +1,15 @@
+//define game logic variables
 let cash = 100;
 let cashDisplay = `$${cash}`;
 let day = 1;
+let time = "Night";
 
 
 
 function updateDisplays(){
     document.getElementById("cash").innerText = cashDisplay;
+    document.getElementById("day").innerText = `Day: ${day}`;
+    document.getElementById("time").innerText = `Time: ${time}`;
 }
 
 function chnageBackground(imagePath){
@@ -26,6 +30,7 @@ function startGame(){
     document.getElementById("cashBox").style.display="flex";
     document.getElementById("restaraunt").style.display="flex";
     document.getElementById("dayBox").style.display="flex";
+    document.getElementById("timeBox").style.display="flex";
     chnageBackground('day1.jpg');
     updateDisplays();
 } 

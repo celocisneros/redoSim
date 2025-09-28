@@ -25,17 +25,18 @@ body{
     border-radius: 5px;
 }
 #cashBox{
-    color: rgb(0, 255, 0);
+    color: white;
     display: none;
     position: absolute;
-    top: 15%;
-    left: 4.6%;
+    top: 18.5%;
+    left: 5%;
     padding: 12px;
     border-radius: 10px;
     width: fit-content;
     height: fit-content;
-    border: solid 5px rgba(0, 255, 0, 0.509);
+    border: solid 3px rgba(0, 255, 0, 0.509);
     font-size: 22px;
+    background-color: black;
 }
 #cash{
     margin-top: 5px;
@@ -91,13 +92,27 @@ body{
     color: white;
     display: none;
     position: absolute;
-    top: 3%;
-    left: 3%;
-    padding: 5px;
+    top: 2%;
+    left: 4.7%;
+    padding: 10px;
     border-radius: 10px;
     width: fit-content;
     height: fit-content;
-    border: solid 5px rgba(255, 255, 255, 0.509);
-    background-color: royalblue;
-    font-size: 20px;
+    border: solid 3px rgba(255, 255, 255, 0.509);
+    background-color: black;
+    font-size: 22px;
+}
+#timeBox{
+    position: absolute;
+    left: 3.4%;
+    top: 10%;
+    color: white;
+    background-color: black;
+    width: fit-content;
+    height: fit-content;
+    padding: 11px;
+    display: none;
+    border-radius: 10px;
+    border: solid 3px purple;
+    font-size: 22px;
 }
