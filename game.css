@@ -28,17 +28,17 @@ body{
     color: rgb(0, 255, 0);
     display: none;
     position: absolute;
-    top: 5%;
-    left: 5%;
-    padding: 20px;
+    top: 15%;
+    left: 4.6%;
+    padding: 12px;
     border-radius: 10px;
     width: fit-content;
     height: fit-content;
     border: solid 5px rgba(0, 255, 0, 0.509);
+    font-size: 22px;
 }
 #cash{
-    margin-top: 10px;
-    font-size: 48px;
+    margin-top: 5px;
 }
 #restaraunt{
     border: solid 1px black;
@@ -91,13 +91,13 @@ body{
     color: white;
     display: none;
     position: absolute;
-    top: 20%;
-    left: 5%;
-    padding: 20px;
+    top: 3%;
+    left: 3%;
+    padding: 5px;
     border-radius: 10px;
     width: fit-content;
     height: fit-content;
     border: solid 5px rgba(255, 255, 255, 0.509);
     background-color: royalblue;
-    font-size: 24px;
+    font-size: 20px;
 }

@@ -1,1 +1,0 @@
-document.getElementById('cash').innerText = cashDisplay;
