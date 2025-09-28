@@ -3,7 +3,9 @@
 <link rel="stylesheet" href="game.css">
 </head>
 <body>
-<button onclick="playBackgroundMusic(`japanLofiCut.mp3`)">start game</button>
+<h1 id="welcomeMessage">welcome to celo life simulator</h1>
+
+<button id="startButton" onclick="startGame()">start game</button>
 
 <div id="cashBox">
 <span id="cash"></span>
@@ -11,7 +13,13 @@
 
 
 <div id="restaraunt">
-    <button onclick="eightHourShift()">Work 8 hours</button>
+    <p>restaraunt</p>
+    <select>
+        <option>buy some food - open menu</option>
+        <option>talk to chef</option>
+        <option>go to work</option>
+        <option>leave</option>
+    </select>
 </div>
 
 <script src="variables.js"></script>
