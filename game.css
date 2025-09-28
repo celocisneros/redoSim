@@ -87,3 +87,17 @@ body{
     padding: 5px;
     font-size: 16px;
 }
+#dayBox{
+    color: white;
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    padding: 20px;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    border: solid 5px rgba(255, 255, 255, 0.509);
+    background-color: royalblue;
+    font-size: 24px;
+}
