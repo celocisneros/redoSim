@@ -5,6 +5,14 @@
 <body>
 <h1 id="welcomeMessage">welcome to celo life simulator</h1>
 
+<p id="howToPlay">
+how to play: <br>
+1. use the dropdown menu to make choices <br>
+2. try to make as much money as possible <br>
+3. have fun! <br>
+<button onclick="document.getElementById('howToPlay').style.display='none'; phoneCallSound(); setTimeout(phoneCallChef, 2000);">close</button>
+</p>
+
 <button id="startButton" onclick="startGame()">start game</button>
 
 <div id="cashBox">
@@ -39,7 +47,10 @@
 <span id="quest"></span>
 </div>
 
-
+<div id="iphone">
+  <div id="screen"></div>
+  <div id="person"></div>
+</div>
 
 <div id="restaraunt">
     <p>restaraunt</p>
