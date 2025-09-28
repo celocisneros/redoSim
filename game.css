@@ -1,0 +1,8 @@
+body{
+    display: flex;
+}
+#cashBox{
+    background: black;
+    color: forestgreen;
+    display: flex;
+}
