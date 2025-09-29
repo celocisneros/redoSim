@@ -5,17 +5,10 @@ let day = 1;
 let time = "Night";
 
 
-
-function updateDisplays(){
-    document.getElementById("cash").innerText = cashDisplay;
-    document.getElementById("day").innerText = `Day: ${day}`;
-    document.getElementById("time").innerText = `Time: ${time}`;
-}
-function updatePhonePerson(imagePath){
-    document.getElementById("person").style.backgroundImage = `url('${imagePath}')`;
-    document.getElementById("person").style.backgroundSize = "contain";
-    document.getElementById("person").style.backgroundPosition = "center";
-    document.getElementById("person").style.backgroundRepeat = "no-repeat";
+function playLoadingSound(){
+  const audio = new Audio('loading1.mp3');
+  audio.volume = 1.0; // Set volume
+  audio.play();
 }
 function changeBackground(imagePath){
     document.body.style.backgroundImage = `url('${imagePath}')`;
@@ -23,28 +16,15 @@ function changeBackground(imagePath){
     document.body.style.backgroundPosition = "center";
     document.body.style.backgroundRepeat = "no-repeat";
 }
-function phoneCallSound(){
-  const audio = new Audio('ring1.mp3');
-  audio.volume = 0.2; // Set volume
-  audio.play();
-}
 function playBackgroundMusic(filePath){
   const audio = new Audio(filePath);
   audio.volume = 0.5; // Set volume
   audio.play();
 }
-function displayPhone(){
-    document.getElementById("iphone").style.display="block";
-}
-function phoneCallChef(){
-    displayPhone();
-    updatePhonePerson('oldChef.jpg');
-    document.getElementById("phoneName").innerText = "Chef";
-}
-function playLoadingSound(){
-  const audio = new Audio('loading1.mp3');
-  audio.volume = 1.0; // Set volume
-  audio.play();
+function updateDisplays(){
+    document.getElementById("cash").innerText = cashDisplay;
+    document.getElementById("day").innerText = `Day: ${day}`;
+    document.getElementById("time").innerText = `Time: ${time}`;
 }
 function startGame(){
     playBackgroundMusic(`japanLofiCut.mp3`);
@@ -59,3 +39,4 @@ function startGame(){
     updateDisplays();
     playLoadingSound();
 } 
+
