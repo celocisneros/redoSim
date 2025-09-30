@@ -5,42 +5,32 @@
 <body>
 <h1 id="welcomeMessage">welcome to celo life simulator</h1>
 
-<p id="howToPlay">
-how to play: <br>
-1. use the dropdown menu to make choices <br>
-2. try to make as much money as possible <br>
-3. have fun! <br>
-<button onclick="document.getElementById('howToPlay').style.display='none'; phoneCallSound(); setTimeout(phoneCallChef, 2000);">close</button>
-</p>
+<button id="welcomeButton" onclick="startGame()">start game</button>
 
-<button id="startButton" onclick="startGame()">start game</button>
-
-<div id="cashBox">
+<div id="playerStats">
 <span id="cash"></span>
-</div>
-
-<div id="dayBox">
-<span id="day">1</span>
-</div>
-
-<div id="timeBox">  
-<span id="time"></span>
-</div>
-
-
-<div id="jobBox">
 <span id="job"></span>
 </div>
 
+<div id="map">
+  <div id="restaraunt">🍜
+    <p class="buildingText">Restaraunt</p>
+  </div>
 
-<div id="restaraunt">
-    <p>restaraunt</p>
-    <select>
-        <option>buy some food - open menu</option>
-        <option>talk to chef</option>
-        <option>go to work</option>
-        <option>leave</option>
-    </select>
+<div class="tree" id="tree1">🌳</div>
+
+  <div id="store">🏪
+    <p class="buildingText">Store</p>
+  </div>
+
+  <div class="tree" id="tree2">🌳</div>
+
+<div id="battleArena">⚔️
+    <p class="buildingText">Battle Arena</p>
+  </div>
+
+  <div class="tree" id="tree3">🌳</div>
+
 </div>
 
 <script src="functions.js"></script>
